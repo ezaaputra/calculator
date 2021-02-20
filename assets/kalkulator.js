@@ -91,5 +91,17 @@ const performCalculation = () => {
     result = parseInt(calculator.firstNumb) - parseInt(calculator.displayNumber);
   }
 
+  // object untuk localstorage
+  const history = {
+    firstNumber: calculator.firstNumb,
+    secondNumber: calculator.displayNumber,
+    operator: calculator.operator,
+    result: result
+  }
+
+  console.log(history);
+
+  putHistory(history);
   calculator.displayNumber = result;
+  renderHistory();
 }
