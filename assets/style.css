@@ -1,0 +1,62 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.flex-container-column{
+  display: flex;
+  flex-direction: column;
+
+  /* properti pendukung */
+  max-width: 800px;
+  text-align: right;
+}
+
+.flex-container-row{
+  display: flex;
+}
+
+.display{
+  background-color: #333333;
+  color: white;
+  padding: 10px 30px;
+  font-size: larger;
+}
+
+.button{
+  font-size: 2em;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid black;
+  flex-basis: 25%;
+  cursor: pointer;
+}
+
+.numb{
+  background: -webkit-linear-gradient(top, #d2d2d2, #dddddd);
+}
+
+.numb:hover{
+  background: -webkit-linear-gradient(top, #adadad, #bebebe);
+}
+
+.operator, .equals, .negative{
+  background-color: orange;
+}
+
+.operator:hover, .equals:hover, .negative:hover{
+  background-color: rgb(182, 120, 4);
+}
+
+.equals{
+  flex-basis: 50%;
+}
+
+@media screen and (max-width: 520px){
+  .button{
+    padding: 20px;
+  }
+}
