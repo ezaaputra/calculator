@@ -6,12 +6,16 @@ body{
   font-family: sans-serif;
 }
 
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .flex-container-column{
   display: flex;
   flex-direction: column;
 
   /* properti pendukung */
-  max-width: 800px;
+  max-width: 600px;
   text-align: right;
 }
 
@@ -58,5 +62,11 @@ body{
 @media screen and (max-width: 520px){
   .button{
     padding: 20px;
+  }
+}
+
+@media screen and (max-width: 370px){
+  .button{
+    padding: 10px;
   }
 }
