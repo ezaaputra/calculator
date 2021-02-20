@@ -8,6 +8,9 @@ body{
 
 .card{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
 }
 
 .flex-container-column{
@@ -17,6 +20,7 @@ body{
   /* properti pendukung */
   max-width: 600px;
   text-align: right;
+  margin: 0 auto 0 auto;
 }
 
 .flex-container-row{
@@ -59,14 +63,49 @@ body{
   flex-basis: 50%;
 }
 
+.history{
+  max-width: 600px;
+  margin: 10px auto 0 auto;
+  overflow: auto;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td{
+  text-align: center;
+  padding: 16px;
+}
+
+th {
+  background-color: orange;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #d2d2d2;
+}
+
 @media screen and (max-width: 520px){
   .button{
     padding: 20px;
   }
+
+  .history{
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 370px){
+@media screen and (max-width: 390px){
   .button{
     padding: 10px;
+  }
+
+  th, td{
+    padding: 5px;
   }
 }
